@@ -52,7 +52,7 @@ palette_rules = "\n".join([
     for i in range(MAX_ENTRIES)
 ])
 
-st.markdown(f"<style>{toggle_rules}\n{palette_rules}</style>", unsafe_allow_html=True)
+st.markdown(f"<style>{toggle_rules}\n{palette_rules}\n\n/* モバイル対応：セレクトボックスの検索入力を非表示 */\ninput[aria-label] {{ display: none !important; }}\n.stSelectbox input {{ display: none !important; }}\n</style>", unsafe_allow_html=True)
 
 st.title("🍉 スイカ収穫時期予測")
 
