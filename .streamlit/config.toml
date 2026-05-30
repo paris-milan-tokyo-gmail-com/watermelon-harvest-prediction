@@ -1,0 +1,15 @@
+[client]
+showErrorDetails = true
+toolbarMode = "minimal"
+
+[server]
+headless = true
+runOnSave = true
+maxUploadSize = 200
+
+[theme]
+primaryColor = "#E83929"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
