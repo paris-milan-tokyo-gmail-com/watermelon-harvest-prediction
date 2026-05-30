@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__Claude_in_Chrome__read_page",
+      "mcp__Claude_in_Chrome__find",
+      "Bash(curl -s \"https://www.data.jma.go.jp/stats/etrn/view/daily_s1.php?prec_no=44&block_no=47662&year=2024&month=5&day=&view=\")",
+      "Bash(curl -s \"https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=44\")",
+      "Bash(curl -s \"https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_d.php?prec_no=44&block_no=47662&year=&month=5&day=&view=\")",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "Bash(.venv/bin/python3)",
+      "Bash(pkill -f \"streamlit run app.py\")",
+      "Bash(.venv/bin/streamlit run *)",
+      "Bash(python3)"
+    ]
+  }
+}
