@@ -1341,3 +1341,23 @@ REGIONS = {
         ],
     },
 }
+
+CRAYON_COLORS = [
+    {"name": "赤", "hex": "#E83929"},
+    {"name": "橙", "hex": "#F08030"},
+    {"name": "黄", "hex": "#F5D000"},
+    {"name": "茶", "hex": "#A0522D"},
+    {"name": "桃", "hex": "#FF69B4"},
+    {"name": "紫", "hex": "#9370DB"},
+    {"name": "青", "hex": "#4169E1"},
+    {"name": "水色", "hex": "#00BFFF"},
+    {"name": "白", "hex": "#F5F5F5"},
+    {"name": "黒", "hex": "#1A1A1A"},
+]
+
+
+def visible_color(hex_color: str) -> str:
+    """Light colors (white, yellow) を濃い灰色に変換して視認性を確保"""
+    if hex_color in ["#F5F5F5", "#F5D000"]:  # 白、黄
+        return "#555555"  # 濃い灰色
+    return hex_color
