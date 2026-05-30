@@ -206,7 +206,7 @@ if st.button("収穫日を計算する", type="primary"):
         actual_cache: dict = {}
         normal_cache: dict = {}
 
-        for _ in range(365):
+        for _ in range(730):  # 2年分まで計算（平年値がない場合の対応）
             yr, mo, dy = current.year, current.month, current.day
             if current <= today:
                 key = (station["prec_no"], station["block_no"], yr, mo)
@@ -218,6 +218,12 @@ if st.button("収穫日を計算する", type="primary"):
                 if key not in normal_cache:
                     normal_cache[key] = cached_normal(station["prec_no"], station["block_no"], mo)
                 temp = normal_cache[key].get(dy)
+                # 平年値がない場合は、今後のデータを使用するか、スキップ
+                if temp is None and normal_cache[key]:  # キャッシュはあるがこの日のデータなし
+                    # 同じ月の平均値を使用
+                    month_temps = [v for v in normal_cache[key].values() if v is not None]
+                    if month_temps:
+                        temp = sum(month_temps) / len(month_temps)
 
             if temp is not None:
                 cumulative += temp
