@@ -398,7 +398,6 @@ REGIONS = {
     },
     "関東": {
         "茨城": [
-            {"name": "花園", "prec_no": "40", "block_no": "0314"},
             {"name": "北茨城", "prec_no": "40", "block_no": "0315"},
             {"name": "大子", "prec_no": "40", "block_no": "0316"},
             {"name": "笠間", "prec_no": "40", "block_no": "0318"},
