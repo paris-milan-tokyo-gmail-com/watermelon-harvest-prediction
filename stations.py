@@ -939,7 +939,6 @@ REGIONS = {
             {"name": "恩原", "prec_no": "66", "block_no": "1371"},
             {"name": "日応寺", "prec_no": "66", "block_no": "1531"},
             {"name": "富", "prec_no": "66", "block_no": "1584"},
-            {"name": "吉備中央", "prec_no": "66", "block_no": "1585"},
             {"name": "旭西", "prec_no": "66", "block_no": "1618"},
         ],
         "広島": [
