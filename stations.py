@@ -817,7 +817,6 @@ REGIONS = {
             {"name": "南小松", "prec_no": "60", "block_no": "1083"},
             {"name": "柳ケ瀬", "prec_no": "60", "block_no": "1087"},
             {"name": "米原", "prec_no": "60", "block_no": "1524"},
-            {"name": "朽木平良", "prec_no": "60", "block_no": "1578"},
         ],
         "京都": [
             {"name": "峰山", "prec_no": "61", "block_no": "0588"},
