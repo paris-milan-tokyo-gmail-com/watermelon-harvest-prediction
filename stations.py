@@ -448,7 +448,6 @@ REGIONS = {
             {"name": "大泉", "prec_no": "49", "block_no": "1023"},
             {"name": "韮崎", "prec_no": "49", "block_no": "1024"},
             {"name": "切石", "prec_no": "49", "block_no": "1234"},
-            {"name": "富士山", "prec_no": "49", "block_no": "47639"},
         ],
         "静岡": [
             {"name": "御殿場", "prec_no": "50", "block_no": "0441"},
@@ -468,7 +467,6 @@ REGIONS = {
             {"name": "磐田", "prec_no": "50", "block_no": "1244"},
             {"name": "菊川牧之原", "prec_no": "50", "block_no": "1335"},
             {"name": "井川", "prec_no": "50", "block_no": "1338"},
-            {"name": "富士山", "prec_no": "50", "block_no": "47639"},
             {"name": "静岡空港", "prec_no": "50", "block_no": "1601"},
         ],
         "愛知": [
